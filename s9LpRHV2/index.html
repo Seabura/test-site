@@ -2,11 +2,106 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>自己紹介ページ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
+  <title>デザイン会社 紹介ページ</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>こんにちは</h1>
-  <p>このページはNFCタグ専用の自己紹介ページです。</p>
+  <div class="container">
+    <header>
+      <img src="image/logo.png" alt="会社ロゴ">
+    </header>
+
+    <section class="intro">
+      <p>
+        SNS始めたいけど、何していいかわからない。。。<br>
+        動画で宣伝したいけど、編集できない。。。<br>
+        何を撮影していいかわからない。。。<br>
+        <br>
+        そんな悩み全て解決します！！<br>
+        <br>
+        １本が低価格で動画宣伝します！<br>
+        撮影もこちらで行うので人を増やす必要もない！<br>
+        ぜひ一度ご相談ください！<br>
+        <br>
+        会社や店舗のPV撮影も可能です！<br>
+        かっこいい動画、オシャレな動画を制作しませんか？<br>
+        ぜひ一度ご相談ください！
+      </p>
+    </section>
+
+    
+
+    <h2 class="section-title mono">YouTube</h2>
+
+    <!-- 通常動画（16:9） -->
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/_19AOrNTR44" allowfullscreen></iframe>
+    </div>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/tiDKaKJvZ0s" allowfullscreen></iframe>
+    </div>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/YBPkucz8Org" allowfullscreen></iframe>
+    </div>
+    <div class="video-wrapper">
+      <iframe src="https://www.youtube.com/embed/zqKzxzzphfA" allowfullscreen></iframe>
+    </div>
+
+    <h2 class="section-title mono">YouTube Shorts</h2>
+
+    <div class="shorts-carousel-container">
+      <button class="carousel-btn prev" onclick="scrollShorts(-1)">←</button>
+
+      <div class="shorts-carousel" id="shortsCarousel">
+        <div class="short-item">
+          <iframe src="https://www.youtube.com/embed/Ib3ck8pMXus" allowfullscreen></iframe>
+        </div>
+        <div class="short-item">
+          <iframe src="https://www.youtube.com/embed/w0fIBvfudk0" allowfullscreen></iframe>
+        </div>
+        <div class="short-item">
+          <iframe src="https://www.youtube.com/embed/r2bvHH79k2g" allowfullscreen></iframe>
+        </div>
+        <div class="short-item">
+          <iframe src="https://www.youtube.com/embed/L0gDkhUJFjU" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <button class="carousel-btn next" onclick="scrollShorts(1)">→</button>
+    </div>
+
+
+
+    <!-- Instagram -->
+    <!-- <h2 class="section-title">Instagram 投稿</h2>
+    <div class="instagram-wrapper">
+      <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/Cx6TGiXo3hN/" data-instgrm-version="14"></blockquote>
+    </div> -->
+
+    <!-- TikTok -->
+    <!-- <h2 class="section-title">TikTok 紹介</h2>
+    <div class="tiktok-wrapper">
+      <blockquote class="tiktok-embed"
+        cite="https://www.tiktok.com/@username/video/7324567890123456789"
+        data-video-id="7324567890123456789"
+        style="max-width: 325px; min-width: 225px;">
+        <section>Loading...</section>
+      </blockquote>
+    </div> -->
+
+    <!-- 最後のリンクボタン -->
+    <div class="cta-button">
+      <a href="https://design.as1pi.com/" target="_blank">▶︎ 公式サイトはこちら</a>
+    </div>
+  </div>
+
+  <!-- 必須スクリプト -->
+  <script async src="https://www.instagram.com/embed.js"></script>
+  <script async src="https://www.tiktok.com/embed.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
